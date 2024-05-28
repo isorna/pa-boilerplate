@@ -1,0 +1,32 @@
+# Node modules of packages
+**/node_modules/**
+node_modules
+
+# Directories of generated code for MUD projects
+**/out
+**/deploys/**
+**/cache
+**/**/worlds.json
+# MUD Client generated static data
+**/dist
+# Worlds.json
+**/worlds.json
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.nx/cache
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+**/**/broadcast/
+*.log
+*.local
+.firebase
+
+#no npm package-locks needed
+**/package-lock.json
