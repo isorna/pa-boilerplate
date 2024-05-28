@@ -1,0 +1,16 @@
+{
+  "name": "pa-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate code for blockchain development for Project Awakening.",
+  "repository": "https://github.com/isorna/pa-boilerplate.git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Alvaro Isorna (@isorna)",
+  "license": "MIT",
+  "devDependencies": {
+    "mprocs": "^0.6.4"
+  }
+}
