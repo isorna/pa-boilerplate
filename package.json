@@ -2,15 +2,25 @@
   "name": "pa-boilerplate",
   "version": "1.0.0",
   "description": "Boilerplate code for blockchain development for Project Awakening.",
-  "repository": "https://github.com/isorna/pa-boilerplate.git",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "Alvaro Isorna (@isorna)",
   "license": "MIT",
+  "repository": "https://github.com/isorna/pa-boilerplate.git",
+  "scripts": {
+    "build": "pnpm recursive run build",
+    "dev": "mprocs",
+    "dev:client": "pnpm --filter 'client' run dev",
+    "dev:contracts": "pnpm --filter 'contracts' dev",
+    "foundry:up": "curl -L https://foundry.paradigm.xyz | bash && bash $HOME/.foundry/bin/foundryup",
+    "mud:up": "pnpm mud set-version --tag main && pnpm install",
+    "prepare": "(forge --version || pnpm foundry:up)",
+    "test": "pnpm recursive run test"
+  },
   "devDependencies": {
     "mprocs": "^0.6.4"
+  },
+  "engines": {
+    "node": "^18",
+    "pnpm": "^8 || ^9"
   }
 }
